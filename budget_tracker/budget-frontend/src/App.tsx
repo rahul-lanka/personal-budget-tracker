@@ -6,6 +6,7 @@ import Budget from './pages/Budget';
 // import Categories from './pages/Categories';
 import './index.css'; // Use the global CSS file
 import type { JSX } from 'react';
+import Categories from './pages/Categories';
 
 // Helper to check for auth token
 const isAuthenticated = () => !!localStorage.getItem('access_token');
@@ -45,7 +46,7 @@ const AppLayout = () => {
           <Route path="/" element={<Dashboard />} />
           <Route path="/transactions" element={<Transactions />} />
           <Route path="/budget" element={<Budget />} />
-          {/* <Route path="/categories" element={<Categories />} /> */}
+          <Route path="/categories" element={<Categories />} />
         </Routes>
       </main>
     </div>

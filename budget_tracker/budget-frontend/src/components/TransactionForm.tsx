@@ -15,7 +15,7 @@ export default function TransactionForm({ onSaved }: Props) {
     (async () => {
       try {
         const res = await API.get("categories/");
-        setCategories(res.data);
+        setCategories(res.data.results || res.data);
       } catch (err) { console.error(err); }
     })();
   }, []);
