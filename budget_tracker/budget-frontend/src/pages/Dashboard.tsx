@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom"; 
 import D3Chart from "../components/D3Chart";
 import API from "../api/    api";
