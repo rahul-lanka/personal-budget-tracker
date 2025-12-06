@@ -16,10 +16,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.http import HttpResponse  # add this
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('finances.urls')),
-    path('', lambda request: HttpResponseRedirect('http://localhost:3000/')),  # 
+    path(
+        "",
+        lambda request: HttpResponse(
+            "Budget Tracker API is running. Visit /api/ for the browsable API."
+        ),
+    ),
 ]
+
 
