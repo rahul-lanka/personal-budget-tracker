@@ -160,11 +160,11 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://your-frontend-name.vercel.app",
+    "https://personal-budget-tracker-theta-cyan.vercel.app",
 ]
 
 # If you prefer to allow all origins during development (not recommended for production):
-# CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True
 
 # -------------------------
 # Other helpful environment / debug settings
